@@ -1,0 +1,13 @@
+version: '3.2'
+
+services:
+  downloader:
+    build: .
+    restart: on-failure
+    command: yarn watch
+    env_file: .env
+    volumes:
+      - /workspace/node_modules
+      - .:/workspace
+      - ./watch:/watch
+      - ./download:/download
