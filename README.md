@@ -1,15 +1,14 @@
-foxbrid
+offcloudbrid
 ===
 
-A debrid-link (debrid-link.fr) blackhole downloader using aria2 RPC.
+An offcloud.com blackhole downloader.
 
 ### Environment Variables
 
 Value | Description | Default
 --- | --- | ---
-DEBRID_LINK_API_KEY | Debrid-Link API Key |
-ARIA2_URL | Aria2 JSON-RPC URL |
-ARIA2_SECRET | Aria2 JSON-RPC Secret |
+OFFCLOUD_API_KEY | Offcloud API Key |
+DOWNLOAD_DIR | Directory to put downloaded files in |
 WATCH_DIR | Directory to watch | /watch
 WATCH_RATE | Rate to check for updates | 5000
 
@@ -18,9 +17,8 @@ forked from https://github.com/mgoodings/patbrid by Miles Goodings
 
 #### Requirements
 
-* An API-Key from debrid-link.fr(https://debrid-link.fr/webapp/apikey)
+* An API-Key from offcloud.com
 * Docker
-* aria2 with JSON-RPC enabled
 
 #### Setup
 
